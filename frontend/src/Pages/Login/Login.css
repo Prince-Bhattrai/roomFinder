@@ -1,0 +1,99 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 20px;
+  height: 90.6vh;
+  
+}
+
+.login form {
+  background: rgba(255, 255, 255, 0.15); /* transparent white */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  border-radius: 12px;
+  padding: 30px 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: transparent;
+  border: 0.5px solid aqua;
+  animation: borderAnim 5s linear infinite;
+}
+
+.login form h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.login form input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333232;
+  outline: none;
+  background: transparent;
+  border: 0.5px solid aqua;
+  animation: borderAnim 5s linear infinite;
+}
+@keyframes borderAnim{
+  0%{
+    border: 0.5px solid rgba(255, 25, 205, 0.808);
+  }20%{
+    border: 0.5px solid rgb(255, 255, 19) ;
+  }40%{
+    border: 0.5px solid rgb(2, 207, 2) ;
+  }60%{
+    border: 0.5px solid orangered;
+  }80%{
+    border: 0.5px solid blue;
+  }100%{
+     border: 0.5px solid rgba(255, 25, 205, 0.808);
+  }
+}
+
+.login form input::placeholder {
+  color: #464545;
+  background: transparent;
+}
+
+.login form button {
+  background:black;
+  color: white;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 0.5px solid aqua;
+  animation: borderAnim 5s linear infinite;
+}
+
+.login form button:hover {
+  background-color: white;
+  color: black;
+}
+
+.login form p {
+  text-align: center;
+  color: #444;
+  font-size: 14px;
+}
+
+
+.login form span{
+    cursor: pointer;
+    color: #26271c;
+}
+
+@media(max-width:500px){
+    .login{
+        height: 80vh;
+    }
+}

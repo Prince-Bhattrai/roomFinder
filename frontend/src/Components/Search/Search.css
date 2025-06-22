@@ -1,0 +1,123 @@
+
+
+.search {
+  padding: 20px;
+  max-width: 1300px;
+  margin: auto;
+  min-height: 85vh;
+}
+
+.serch-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  
+}
+
+.serch-text input {
+  padding: 12px 16px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  color: #444;
+}
+
+.search-icon {
+  font-size: 40px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #5c5454;
+  transform: scale(1.8);
+}
+
+.match-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+    border: 1px solid #444;
+  background:transparent;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card video {
+  width: 100%;
+  max-height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.card p {
+  font-size: 13px;
+  margin: 2px 0;
+  color: #555;
+}
+
+/* Responsive Breakpoints */
+@media screen and (min-width: 1200px) {
+  .match-item {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .match-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .serch-text {
+    flex-direction: row;
+  
+  }
+
+  .serch-text input {
+    width: 70%;
+  }
+
+  .search-icon {
+    align-self: flex-end;
+    font-size: 50px;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .match-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.no-result {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}

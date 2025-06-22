@@ -1,0 +1,151 @@
+/* Profile.css */
+
+.profile {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 15px;
+
+}
+
+.user-info p {
+  margin: 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.add-post button {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.add-post button:hover {
+  background-color: #34495e;
+}
+
+.buttom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Each post card */
+.postcart {
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border: 0.5px solid aqua;
+  animation: borderAnim 5s linear infinite;
+}
+
+.postcart:hover {
+  transform: translateY(-5px);
+}
+
+.postcart video {
+   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.postcart p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive */
+
+/* Medium screens tablets */
+@media (max-width: 992px) {
+  .buttom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-post button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small screens mobile */
+@media (max-width: 600px) {
+  .buttom {
+    grid-template-columns: 1fr;
+  }
+
+  .user-info p {
+    font-size: 16px;
+  }
+
+  .add-post button {
+    font-size: 16px;
+  }
+}
+
+
+.update_and_delete_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.icon_style{
+    font-size: 25px;
+    transition: 1s all;
+
+}
+
+.icon_style:hover{
+    transform: scale(1.5);
+}
+
+
+@keyframes borderAnim{
+  0%{
+    border: 0.5px solid rgba(255, 25, 205, 0.808);
+  }20%{
+    border: 0.5px solid rgb(255, 255, 19) ;
+  }40%{
+    border: 0.5px solid rgb(2, 207, 2) ;
+  }60%{
+    border: 0.5px solid orangered;
+  }80%{
+    border: 0.5px solid blue;
+  }100%{
+     border: 0.5px solid rgba(255, 25, 205, 0.808);
+  }
+}

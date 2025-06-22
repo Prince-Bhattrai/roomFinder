@@ -1,0 +1,96 @@
+.update_post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10vh 0;
+
+}
+.update_post h1{
+    text-align: center;
+
+}
+.update_post form{
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444;
+    width: 50%;
+    border-radius: 10px;
+    
+}
+.update_post input,
+.update_post textarea{
+    width: 90%;
+    padding: 8px;
+    background: transparent;
+    border: 0.5px solid #444;
+    border-radius: 10px;
+    color: #444;
+}
+.update_post textarea{
+    height: 60px;
+}
+.update_post .buttom{
+    width: 80%;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+
+}
+.update_post .buttom button{
+    padding: 12px 30px;
+    width: 60%;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border:1px solid #444;
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+}
+.update_post .buttom button:hover{
+    background-color: white;
+    color: black;
+
+}
+
+
+.buttom .buttom-small{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.buttom .buttom-small p{
+    font-size: 13px;
+}
+.buttom .buttom-small select {
+    padding: 6px 10px;
+    background:transparent;
+    color: #fff;
+    border-radius:10px ;
+}
+
+.buttom .buttom-small select option{
+    background: transparent;
+    color: #444;
+    border-radius: 100px;
+    background: transparent;
+}
+
+
+
+
+@media(max-width:700px){
+    .update_post form{
+        width: 90vw;
+    }
+}

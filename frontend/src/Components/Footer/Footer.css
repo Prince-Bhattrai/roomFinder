@@ -1,0 +1,80 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background:#0f0e16; 
+  backdrop-filter: blur(10px);
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer .left,
+.footer .middle,
+.footer .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.footer p a{
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer .middle a {
+  margin: 0.4rem 0;
+  transition: transform 0.3s ease;
+}
+
+.footer .middle a:hover {
+  transform: scale(1.1);
+}
+
+/* Icons align horizontally on desktop */
+.footer .middle {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Responsive for mobile screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer .middle {
+    justify-content: center;
+  }
+
+  .footer .right,
+  .footer .left {
+    align-items: center;
+  }
+}
+
+
+
+.footer .right a{
+  text-decoration: none;
+  color: #444;
+  transition: 0.5s all;
+}
+
+.footer .right a:hover{
+  text-decoration: underline;
+  color: aqua;
+}

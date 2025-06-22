@@ -1,0 +1,19 @@
+.hero{
+    padding:1vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero img{
+    border-radius: 10px;
+    width: 90vw;
+    cursor: pointer;
+    user-select: none;
+}
+.header{
+    margin-top: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    user-select: none;
+}
