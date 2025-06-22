@@ -48,7 +48,7 @@ KTM Room Finder is a full-stack web application built with React, Node.js, Expre
 ## Folder Structure
 
 - `/frontend` – React app for UI
-- `/backend` – Express server, routes, models, and controllers
+- `/backend` – Express server, auth, models, app,and controllers
 
 ## Future Improvements
 
